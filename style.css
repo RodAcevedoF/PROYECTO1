@@ -919,7 +919,7 @@ footer section:nth-child(2) h4 {
     }
 }
 
-@media screen and (max-width: 392px) {
+@media screen and (max-width: 400px) {
     .search-logo {
         background-color: var(--background-color);
         margin-bottom: 40px;
