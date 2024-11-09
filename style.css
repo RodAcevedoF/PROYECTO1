@@ -1,0 +1,996 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');  
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+:root {
+    --back-light-color: #f4f2f2;
+    --background-color: rgb(255, 255, 255);
+    --letter-primary: black;
+    --letter-secondary: #a5a4a4d6;
+    --letter-tertiary: #7C7C7C;
+    --red-color: rgba(220, 20, 60, 0.9);
+    font-family: "PT Sans";
+}
+body {
+    background-color: var(--background-color);
+    min-height: 100vh;
+    width: 100%;
+}
+header {
+    display: block
+}
+a {
+    color: var(--letter-primary);   
+    display: flex;
+    text-decoration: none; 
+}
+.link-login {
+    display: flex;
+    width: 100%;
+}
+#mobile-signin {
+    display: none;
+}
+#tablet-burger {
+    display: none;
+}
+.link-login {
+    align-items: center;
+    justify-content: space-between;
+    text-decoration-style:none;
+}
+.link-login ul {
+    align-items: flex-start;
+    display: flex;
+    font-size: 11px;
+    font-weight: 500;
+    gap: 10px;
+    list-style: none;
+    padding-top: 0;
+    padding: 5px;
+}
+.link-login li {
+    display: flex;
+    height: 3em;
+    letter-spacing: 2px;
+}   
+.link-login > ul li:first-child {
+    border-top: 3px solid var(--letter-secondary);
+}
+.link-login li a {
+    color: var(--letter-secondary);    
+    margin: auto;
+}
+.link-login li a:hover {
+    color: var(--red-color);
+}
+.header-div {
+    align-content: center;  
+    display: flex;
+    gap: 15px;
+    height: 2.5em;
+    justify-content: center;
+    width: 10em;
+}
+
+.header-div a:nth-child(2) {
+    align-self: center;
+    color: var(--letter-tertiary);
+    font-size: 12px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+#sign-icon {
+    padding: 5px;
+}
+#fender-logo {
+    height: auto;
+    width: 180px;
+}
+.search-logo {
+    align-items: center;
+    background-color: var(--background-color);
+    display: grid;
+    grid-row: repeat (2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    height: auto;
+    justify-items: center;
+    padding: 0 10px 0 10px;
+    position: sticky;
+    width: 100%;
+}
+.search-logo ul {
+    display: flex;
+    font-size: 12px;
+    font-weight: bolder;
+    gap: 45px;
+    grid-area: 2 / 1 / 3 / 6;
+    height: 40px;
+    justify-content: center;
+    justify-items: center;
+    letter-spacing: 1px;
+    list-style: none;
+    width: 100%;
+}
+.search-logo li {
+    display: flex;
+}
+.search-logo ul li a{
+    color: var(--letter-tertiary);
+    padding-bottom: 25px;
+    padding-top: 5px;
+    transition: 0.2s;
+}
+.search-logo ul li a:hover {
+    border-bottom: 3px solid var(--red-color);
+    color: var(--red-color);
+}
+.search {
+    display: flex;
+    grid-area: 1 / 2 / 2 / 5;
+    height: 60%;
+    width: 80%;
+}
+.search input {
+    border-radius: 20px;
+    border: 1px solid var(--letter-secondary);
+    color: var(--letter-tertiary);
+    font-size: 15px;
+    font-weight: 600;
+    justify-self: center;
+    letter-spacing: 1px;
+    opacity: 0.6;
+    padding-left: 30px;
+    width: 100%;
+}
+.search input:hover {
+    border: 3px solid #f0beba;
+}
+.search input:focus {
+    outline: none;
+}
+.search-logo div {
+    align-content: center;
+    display: flex;
+    gap: 25px;
+    height: 70px;
+    justify-content: center;
+    width: 200px;
+}
+.search-logo a {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    transition: 0.1s;
+    width: 100%;
+} 
+.search-logo div a img {
+    height: 40%;
+    object-fit: contain;
+    width: 40%;
+}
+.search-logo a:hover {
+    border-bottom: solid 3px var(--red-color);
+}
+.hero > p {
+    align-self: flex-start;
+    background-color: var(--letter-primary);
+    color: var(--background-color);
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    gap: 5px;
+    height: auto;
+    justify-content: center;
+    letter-spacing: 1px;
+    padding: 2px;
+    width: 100%;
+}
+.hero > p > a {
+    color: var(--background-color);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.hero {
+    background-image: url(https://stuff.fendergarage.com/images/c/L/D/ChampionIIAmps_HPS_Desktop_EMEA@2x.jpg);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 35em;
+    width: 100%;
+}
+.hero-group {
+    color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 150px;
+    width: 400px;
+    justify-self: center;
+}    
+.hero-group h1 {
+    font-size: 4em;
+    font-weight: bolder;
+}
+.hero-group p {
+    font-size: 1em;
+    font-weight: 600;
+}
+.hero-group a {
+    background-color: var(--background-color);
+    border-radius: 15px;
+    color: var(--letter-primary);
+    font-weight: bolder;
+    height: auto;
+    justify-content: center;
+    padding: 5px;
+    width: 100px;
+}
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+.main-nav > ul {
+    display:flex;
+    font-size: 12px;
+    font-weight: bold;
+    gap: 40px;
+    letter-spacing: 1px;
+    list-style: none;
+}
+.main-nav li a {
+    color: var(--letter-tertiary);
+    padding-bottom: 20px;
+    transition: 0.2s;
+}
+.main-nav li a:hover {
+    border-bottom: 3px solid var(--letter-primary);
+    color: var(--letter-primary);
+}
+
+.first-gallery {
+    display: grid;
+    gap: 10px;
+    grid-auto-rows: 600px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding-top: 10px;
+    padding: 10px;
+    width: 100%;
+}
+.first-gallery article {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+}
+.first-gallery p:first-child {
+    align-self: flex-end;
+    font-size: 12px;
+    font-weight: bold;
+    height: auto;
+    margin-right: 20px;
+    padding: 5px;
+    position: absolute;
+    text-align: right;
+    width: auto;
+}
+.ltd {
+    background-color: var(--background-color);
+    border: 1px solid var(--letter-primary);
+}
+.new {
+    background-color: var(--red-color);
+    color: var(--background-color);
+}
+.first-gallery article h3 {
+    justify-items: center;
+    padding-top: 10px;
+    width: 100%;
+}
+.price {
+    color: var(--letter-secondary);
+    font-weight: bolder;
+    justify-self: flex-start;
+    padding-left: 30px;
+    width: 100%;
+}
+.first-gallery a {
+    display: flex;
+    height: 85%;
+    padding: 10px;
+    width: 85%;
+}
+.first-gallery article img {
+    height: auto;
+    object-fit: contain;
+    width: 100%;
+}
+.out-link {
+    align-items: center;
+    background-color: var(--letter-primary);
+    border-radius: 20px;
+    border: 2px solid var(--letter-secondary);
+    color: var(--background-color);
+    font-weight: bold;
+    height: 40px;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+    transition: 0.3s;
+    width: 100px;
+}
+.out-link:hover {
+    background-color: var(--background-color);
+    color: var(--letter-primary);
+}
+.top-model {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 60px;
+    padding: 40px;
+}
+.top-model h2 {
+    padding: 10px;
+}
+.top-model ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    padding-top: 20px;
+}
+.top-model li a     {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.top-model li {
+    max-width: 270px;
+    max-height: auto;
+}
+.top-model p {
+    background-color: var(--background-color);
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 10px;
+    z-index: 5;
+}
+.arrow {
+    display: none;
+    font-size: 14px;
+}
+.top-model p:hover {
+    .arrow {
+        display: inline-flex;
+    }
+}
+.top-model > ul img {
+    object-fit: contain;
+    transition: 0.5s;
+    width: 100%;
+    width: 100%;
+    z-index: 0;
+}
+.top-model > ul img:hover {
+    transform: scale(1.05);
+}
+.top-model ul:last-child {
+    flex-direction: row;
+    gap: 20px;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 20px;
+    padding: 70px 0 30px 0;
+    width: 100%;
+}
+.top-model ul:last-child li {
+    align-items: flex-start;
+    justify-content: flex-end;
+    min-height: 20em;
+    min-width: 30em;
+    padding: 20px;
+    transition: 0.5s;
+}
+.top-model ul:last-child li:hover {
+    transform: scale(1.05);    
+}
+.top-model ul:last-child li:first-child {
+    background-image: url(https://stuff.fendergarage.com/images/U/0/e/UltraII_ShopCard_EN@2x.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.top-model ul:last-child li:last-child {
+    background-image: url(https://stuff.fendergarage.com/images/l/z/G/ChampionIIAmps_ShopCard_EN@2x.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.top-model ul:last-child a {
+    color: var(--background-color);
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    height: auto;
+    width: fit-content;
+}
+.top-model ul:last-child a:last-child {
+    font-size: 15px;
+    text-decoration: underline;
+}
+.nav-accesories {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+.nav-accesories > ul {
+    display:flex;
+    font-size: 12px;
+    font-weight: bold;
+    gap: 40px;
+    letter-spacing: 1px;
+    list-style: none;
+}
+.nav-accesories li a {
+    color: var(--letter-tertiary);
+    padding-bottom: 20px;
+    transition: 0.2s;
+}
+.nav-accesories li a:hover {
+    border-bottom: 3px solid var(--letter-primary);
+    color: var(--letter-primary);
+}
+.second-gallery {
+    display: grid;
+    gap: 10px;
+    grid-auto-rows: 600px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 10px;
+    width: 100%;
+}
+.second-gallery article {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+}
+.second-gallery article h3 {
+    justify-items: center;
+    padding-top: 10px;
+    width: 100%;
+}
+.second-gallery p:first-child {
+    align-self: flex-end;
+    background-color: var(--background-color);
+    border: 1px solid var(--letter-primary);
+    font-size: 12px;
+    font-weight: bold;
+    height: auto;
+    margin-right: 20px;
+    padding: 5px;
+    position: absolute;
+    text-align: right;
+    width: auto;
+}
+.second-gallery a {
+    display: flex;
+    height: 85%;
+    padding: 10px;
+    width: 85%;
+}
+.second-gallery article img {
+    height: auto;
+    object-fit: contain;
+    width: 100%;
+}
+.mod-shop {
+    align-content: center;
+    display: flex;
+    height: auto;
+    padding-top: 40px;
+    padding: 20px;
+    width: 100%;
+}
+.mod-shop ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    height: 100%;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding: 20px;
+    width: 100%;
+}
+.mod-shop ul li {
+    align-items: flex-start;
+    align-self: center;
+    gap: 10px;
+    justify-content: flex-end;
+    min-height: 20em;
+    min-width: 30em;
+    padding: 10px;
+    transition: 0.5s;
+}
+.mod-shop ul li:hover {
+    transform: scale(1.05);    
+}
+.mod-shop ul li:first-child {
+    background-image: url(https://stuff.fendergarage.com/images/o/Q/c/Web_Fender_HPS_Mod_Shop_NEW_ShopCard_v2@2x.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.mod-shop ul li:last-child {
+    background-image: url(https://stuff.fendergarage.com/images/F/Y/W/Fender_HO24_Holiday-Gift-Guide_EMEA_Owned_Phase1_EN_ShopCard_EssentialAccessories@2x.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.mod-shop a {
+    color: var(--letter-color);
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    height: auto;
+    width: fit-content;
+}
+.mod-shop ul a:last-child {
+    font-size: 15px;
+    text-decoration: underline;
+}
+.top-cat {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 60px;
+    padding: 40px;
+}
+.top-cat h2 {
+    padding: 10px;
+}
+.top-cat ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    padding-top: 20px;
+}
+.top-cat li a     {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.top-cat li {
+    max-width: 270px;
+    max-height: auto;
+}
+.top-cat p {
+    background-color: var(--background-color);
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 5px;
+    z-index: 5;
+}
+.top-cat > ul img {
+    height: 100%;
+    object-fit: contain;
+    transition: 0.5s;
+    width: 100%;
+    z-index: 0;
+}
+.top-cat > ul img:hover {
+    transform: scale(1.05);
+}
+.article-sect {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+    width: 100%;
+}
+.article-sect h3 {
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 25px;
+    padding: 10px;
+}
+.flex-article {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 20px;
+    height: 100%;
+    justify-content: center;  
+    padding-top: 10px; 
+    padding: 20px;
+    width: 100%;
+}
+.flex-article article {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 32%;
+    overflow: hidden; 
+}
+.flex-article h4 {
+    background-color: var(--back-light-color);
+    filter: blur(0.4px);
+    font-size: 20px;
+    padding: 10px;
+}
+.flex-article p {
+   background-color: var(--back-light-color);
+   color: var(--letter-tertiary);
+   font-size: 12px;
+   font-weight: bold;
+   padding: 10px;
+   z-index: 5; 
+}
+.flex-article a {
+    background-color: var(--back-light-color);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: underline;
+}
+.flex-article img {
+    align-self: center;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.25s;
+    width: 100%;
+}
+.flex-article img:hover {
+    transform: scale(1.05);
+}
+.quality-icons {
+    align-items: flex-start;
+    background-color: var(--back-light-color);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    height: auto;
+    justify-content: space-around;
+    list-style: none;
+    padding: 30px 0 20px 0;
+    width: 100%;
+}
+.quality-icons li {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    justify-content: center;
+    width: 200px;
+}
+.quality-icons img {
+    height: auto;
+    object-fit: contain;
+    width: 20%;
+}
+.quality-icons p {
+    font-size: 13px;
+    text-align: center;
+}
+footer {
+    background-color: black;
+}
+footer > form {
+    color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+}
+footer h3 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+footer form p {
+    color: var(--letter-tertiary);
+    font-weight: bold;
+}
+footer > form img {
+    height: auto;
+    width: 200px;
+}
+footer input {
+    background-color: var(--letter-color); 
+    border: 2px solid var(--letter-tertiary);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px;
+}
+footer button {
+    align-self: flex-end;
+    background-color: var(--background-color);
+    bottom: 80px;
+    color: var(--letter-primary);
+    cursor: pointer;
+    font-weight: bold;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    right: 20px;
+    transition: 0.2s;
+    width: 120px;
+}
+footer button:hover {
+    box-shadow: inset 5px 5px 100px -41px rgba(0, 0, 0, 0.3);
+}
+footer section:nth-child(2) {
+    display: grid;
+    gap: 30px;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 20px;  
+}
+footer section:nth-child(2) ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;    
+}
+footer section:nth-child(2) ul li a {
+    color: var(--letter-secondary);
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+}
+footer section:nth-child(2) h4 {
+    border-top: 1px solid var(--letter-tertiary);
+    color: var(--background-color);
+    font-weight: bold;
+    padding: 15px 0 15px 0;
+}
+.lang-social {
+    border-bottom: 1px solid var(--letter-tertiary);
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    justify-self: center;
+    padding: 30px 0 30px 0;
+    width: 95%;
+}
+.lang-social > ul {
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid var(--background-color);
+    display: flex;
+    font-size: 25px;
+    height: auto;
+    justify-content: center;
+    list-style: none;
+    width: 160px;
+}
+.lang-social li {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+.lang-social > ul li a{
+    color: var(--background-color);
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 0;
+}
+.lang-social > ul li img {
+    height: auto;
+    padding: 0;
+    width: 60%;
+}
+.lang-social div{
+    display: flex;
+    gap: 5px;
+    height: 50px;
+}
+.lang-social div a:nth-child(2) {
+    align-self: center;
+    height: 80%;
+    width: 80%;
+}
+.terms-legal {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 5px 10px 5px 25px;
+}
+.terms-legal li {
+    display: flex;
+    padding-left: 15px;
+}
+.terms-legal li a {
+    color: var(--letter-secondary);
+    font-size: 15px;
+}
+#end {
+ color: var(--letter-secondary);
+ padding: 10px 10px 25px 40px;   
+}
+
+@media screen and (max-width: 768px) {    
+    .link-login {
+        font-size: 12px;
+        height: 35px;
+        width: 100%;
+    }
+    .link-login ul {
+        font-size: 10px;
+    }
+    .search-logo {
+        padding: 5px;
+    }
+    .search-logo ul {
+        display: none;
+    }
+    .search-logo input {
+        padding-left: 15px;
+    }
+    .search-logo div {
+       display: none
+    }
+    #tablet-burger { 
+        display: flex;  
+        gap: 10px;
+        height: 70px;
+        width: 120px;
+    }
+    .search-logo div a img {
+        height: 40%;
+        width: 50%;
+    }
+    #fender-logo {
+        width: 110px;
+    }
+   .hero > p {
+    font-size: 12px;
+   }
+    .hero-group {
+        height: auto;
+        width: 55%;
+    }
+     .hero-group h1 {
+        font-size: 2.5em;
+        font-weight: bolder;
+    }
+    .hero-group p {
+        font-size: 0.85em;
+        font-weight: 600;
+        padding-right: 60px;
+    } 
+    .main-nav > ul, .nav-accesories > ul {
+        gap: 10px;
+    }
+    .top-model ul:last-child li, .mod-shop ul li {
+        min-height: 15em;
+        min-width:  18em;
+        padding: 10px;
+    }
+    .top-model ul:last-child a, .mod-shop a {
+        font-size: 18px;
+    }
+    .top-model ul:last-child a:last-child, .mod-shop ul a:last-child {
+        font-size: 12px;
+    }
+    .flex-article article {
+        min-width: 250px;
+    }
+    .flex-article h4 {
+        font-size: 15px;
+        padding: 5px;
+    }
+    .flex-article p {
+        font-size: 13px;
+        padding: 5px;
+    }
+    .terms-legal li a, #end {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 392px) {
+    .search-logo {
+        background-color: var(--background-color);
+        margin-bottom: 40px;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+    .link-login {
+        display: none;
+    }
+    #tablet-burger {
+        display: none;
+    }
+    #mobile-signin{
+        display: flex;
+        grid-area: 1 / 3 / 2 / 6;
+        height: 50px;
+        justify-self: flex-end;
+        width: 180px;
+    }
+    #mobile-signin div a img {
+        height: 50%;
+        width: 50%;
+    }
+    .search-logo > div {
+        display: none;
+    }
+    .search {
+        grid-area: 2 / 1 / 3 / 6;
+        height: auto;
+        justify-content: center;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        width: 100%;
+    }
+    .search input {
+        height: 35px;
+        padding-left: 25px;
+        width: 60%;
+    }
+    .hero-group {
+        width: 80%;
+    }
+    .hero > p {
+        font-size: 10px;
+        margin-top: 105px;
+        padding: 5px;
+    }
+    footer > form > input {
+        font-size: 13px;
+    }
+    .lang-social > ul {
+        width: 100px;
+    }
+    .lang-social > ul > li a {
+        font-size: 14px;
+        padding-left: 8px;
+    }
+    .lang-social div {
+        height: 40px;
+        margin: 0;
+    }
+    .terms-legal {
+        flex-flow: row wrap;
+    }
+    .terms-legal li a{
+        font-size: 12px;
+    }
+    #end {
+        padding-top: 15px;
+        padding-left: 10px;
+        text-align: center;
+    }
+}

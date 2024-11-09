@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="author" content="Rodrigo A" />
+    <meta name="description" content="guitar shop" />
+    <meta
+      name="keywords"
+      content="amps, music, guitar, basses, audio, musician"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://imjustcreative.com/wp-content/uploads/2013/06/CBS-Era-Fender-logo-design.jpg"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Guitar Shop</title>
+  </head>
+  <body>
+    <header>
+      <nav class="link-login">
+        <ul>
+          <li>
+            <a
+              href="https://www.fender.com/en-GB/start"
+              target="_blank"
+              rel="noopener noreferrer"
+              >FENDER.COM</a
+            >
+          </li>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer">PLAY</a>
+          </li>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer">TUNE</a>
+          </li>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer"
+              >BEGINNERS</a
+            >
+          </li>
+        </ul>
+        <div class="header-div">
+          <a
+            href="https://connect.fender.com/sign-in?ref=https://www.fender.com/en-GB/start&signin=1731056228481&_gl=1*1p4ea2t*_gcl_aw*R0NMLjE3MzA4NDM4ODguQ2p3S0NBanctSkc1QmhCWkVpd0F0N0pSNjc1b3pPSEozcEdZTG1vcV92d3ppQUl0d3VBd1pGVmZpbTF6SUkxZGlYYklmWVU0ZFYyVzZSb0NVb3dRQXZEX0J3RQ..*_gcl_au*MjEzMDMwMjU0LjE3MjkyNTkzMjA.*_ga*MjIzODQ5Mzk0LjE3MjkyNTkzMTg.*_ga_LM1PVBW4K2*MTczMTA1NjIyMC4zMS4xLjE3MzEwNTYyNTEuMjkuMC4w"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://i.postimg.cc/d3WW86bS/pngegg.png"
+              alt="icono login"
+              id="sign-icon"
+          /></a>
+          <a
+            href="https://connect.fender.com/sign-in?ref=https://www.fender.com/en-GB/start&signin=1731056228481&_gl=1*1p4ea2t*_gcl_aw*R0NMLjE3MzA4NDM4ODguQ2p3S0NBanctSkc1QmhCWkVpd0F0N0pSNjc1b3pPSEozcEdZTG1vcV92d3ppQUl0d3VBd1pGVmZpbTF6SUkxZGlYYklmWVU0ZFYyVzZSb0NVb3dRQXZEX0J3RQ..*_gcl_au*MjEzMDMwMjU0LjE3MjkyNTkzMjA.*_ga*MjIzODQ5Mzk0LjE3MjkyNTkzMTg.*_ga_LM1PVBW4K2*MTczMTA1NjIyMC4zMS4xLjE3MzEwNTYyNTEuMjkuMC4w"
+            target="_blank"
+            rel="noopener noreferrer"
+            >SIGN IN</a
+          >
+        </div>
+      </nav>
+      <nav class="search-logo">
+        <img
+          src="https://i.postimg.cc/4d44yNsb/pngegg-1.png"
+          alt="logo-fender"
+          id="fender-logo"
+        />
+        <form action="search.js" method="get" class="search">
+          <input type="text" name="search" id="search" placeholder="Search" />
+        </form>
+        <div>
+          <a
+            href="https://www.fender.com/en-GB/dealers"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/on/demandware.static/Sites-Fender-EMEA-Site/-/default/dwe9c2187c/images/locator.svg"
+              alt="dealers"
+              class="cart-dealers"
+          /></a>
+          <a href="#null" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/on/demandware.static/Sites-Fender-EMEA-Site/-/default/dw0587903c/images/minicart.svg"
+              alt="carrito"
+              class="cart-dealers"
+          /></a>
+        </div>
+        <div id="tablet-burger">
+          <a href="#null" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/on/demandware.static/Sites-Fender-EMEA-Site/-/default/dw0587903c/images/minicart.svg"
+              alt="carrito"
+              class="cart-dealers"
+          /></a>
+          <a href="#null" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="https://img.icons8.com/?size=32&id=VypMXfzO4ZOq&format=png"
+              alt="burger menu"
+              class="cart-dealers"
+          /></a>
+        </div>
+        <div id="mobile-signin">
+          <a
+            href="https://connect.fender.com/sign-in?ref=https://www.fender.com/en-GB/start&signin=1731056228481&_gl=1*1p4ea2t*_gcl_aw*R0NMLjE3MzA4NDM4ODguQ2p3S0NBanctSkc1QmhCWkVpd0F0N0pSNjc1b3pPSEozcEdZTG1vcV92d3ppQUl0d3VBd1pGVmZpbTF6SUkxZGlYYklmWVU0ZFYyVzZSb0NVb3dRQXZEX0J3RQ..*_gcl_au*MjEzMDMwMjU0LjE3MjkyNTkzMjA.*_ga*MjIzODQ5Mzk0LjE3MjkyNTkzMTg.*_ga_LM1PVBW4K2*MTczMTA1NjIyMC4zMS4xLjE3MzEwNTYyNTEuMjkuMC4w"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/128/12123/12123009.png"
+              alt="sign in"
+          /></a>
+          <a href="#null" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/on/demandware.static/Sites-Fender-EMEA-Site/-/default/dw0587903c/images/minicart.svg"
+              alt="carrito"
+              class="cart-dealers"
+          /></a>
+          <a href="#null" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="https://img.icons8.com/?size=32&id=VypMXfzO4ZOq&format=png"
+              alt="burger-menu"
+              class="cart-dealers"
+          /></a>
+        </div>
+        <ul>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer"
+              >GIFT GUIDE ▼</a
+            >
+          </li>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer"
+              >ELECTRICS ▼</a
+            >
+          </li>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer"
+              >BASSES ▼</a
+            >
+          </li>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer"
+              >ACOUSTICS ▼</a
+            >
+          </li>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer">AMPS ▼</a>
+          </li>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer"
+              >ACCESORIES ▼</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <p>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            >Free Shipping</a
+          >
+          on orders over £50 |
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            >Explore American Ultra II</a
+          >
+        </p>
+        <div class="hero-group">
+          <p>New</p>
+          <h1>CHAMPION™ II AMPLIFIERS</h1>
+          <p>
+            Whether you're lookingfor your first practice amp, or affordable,
+            powerful stage gearfor playing in a band, there's a Champion II amp,
+            ideal for you
+          </p>
+          <a
+            href="https://www.fender.com/en-GB/guitar-amplifiers/contemporary-digital/champion/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >SHOP NOW</a
+          >
+        </div>
+      </section>
+    </header>
+    <main>
+      <nav class="main-nav">
+        <h2>Fender Highlights</h2>
+        <ul>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer"
+              >NEW RELEASES</a
+            >
+          </li>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer"
+              >BEST SELLERS</a
+            >
+          </li>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer"
+              >PLAYER II SERIES</a
+            >
+          </li>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer"
+              >BEGINNERS GUITARS</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <section class="first-gallery">
+        <article>
+          <p class="ltd">LIMITED EDITION</p>
+          <a
+            href="https://www.fender.com/en-GB/electric-guitars/stratocaster/limited-edition-player-ii-stratocaster-british-racing-green/0140800592.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10059/0140800592_fen_ins_frt_1_rr.jpg"
+              alt="Stratocaster limited edition british racing green"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/electric-guitars/stratocaster/limited-edition-player-ii-stratocaster-british-racing-green/0140800592.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LPE II Stratocaster® BRG Color</a
+            >
+          </h3>
+          <p class="price">€759.00</p>
+        </article>
+        <article>
+          <p class="ltd">LIMITED EDITION</p>
+          <a
+            href="https://www.fender.com/en-GB/electric-guitars/telecaster/limited-edition-player-ii-telecaster-british-racing-green/0140820592.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10059/0140820592_fen_ins_frt_1_rr.jpg"
+              alt="Telecaster limited edition british racing green"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/electric-guitars/telecaster/limited-edition-player-ii-telecaster-british-racing-green/0140820592.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LEP II Telecaster® BRG Color</a
+            >
+          </h3>
+          <p class="price">€759.00</p>
+        </article>
+        <article>
+          <p class="new">NEW</p>
+          <a
+            href="https://www.fender.com/en-GB/guitar-amplifiers/contemporary-digital/champion-ii-25/2330706900.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=712/https://www.fmicassets.com/Damroot/ZoomJpg/10051/2330704900_fen_amp_frt_1_nr.jpg"
+              alt="amplifier Champion II 25"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/guitar-amplifiers/contemporary-digital/champion-ii-25/2330706900.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Champion™ II 25</a
+            >
+          </h3>
+          <p class="price">€149.00</p>
+        </article>
+        <article>
+          <p class="new">NEW</p>
+          <a
+            href="https://www.fmicassets.com/Damroot/MedJpg/10051/2330806900_fen_amp_frt_1_nr.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=712/https://www.fmicassets.com/Damroot/ZoomJpg/10051/2330804900_fen_amp_frt_1_nr.jpg"
+              alt="amplifier champion II 50"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fmicassets.com/Damroot/MedJpg/10051/2330806900_fen_amp_frt_1_nr.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Champion™ II 50</a
+            >
+          </h3>
+          <p class="price">€149.00</p>
+        </article>
+        <article>
+          <p class="new">NEW</p>
+          <a
+            href="https://www.fender.com/en-GB/guitar-amplifiers/contemporary-digital/champion-ii-100/2330906900.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=712/https://www.fmicassets.com/Damroot/ZoomJpg/10051/2330904900_fen_amp_frt_1_nr.jpg"
+              alt="amplifier champion II 100"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/guitar-amplifiers/contemporary-digital/champion-ii-100/2330906900.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Champion™ II 100</a
+            >
+          </h3>
+          <p class="price">€349.00</p>
+        </article>
+        <article>
+          <p class="ltd">BEST SELLER</p>
+          <a
+            href="https://www.fender.com/en-GB/electric-guitars/telecaster/american-ultra-ii-telecaster/0119172796.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10036/0119172796_fen_ins_frt_1_rr.jpg"
+              alt="American ultra II Telecaster"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/electric-guitars/telecaster/american-ultra-ii-telecaster/0119172796.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >American Ul II Telecaster®</a
+            >
+          </h3>
+          <p class="price">€2259.00</p>
+        </article>
+        <article>
+          <p class="ltd">BEST SELLER</p>
+          <a
+            href="https://www.fender.com/en-GB/guitar-amplifiers/contemporary-digital/tone-master-59-bassman/2274506000.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=712/https://www.fmicassets.com/Damroot/ZoomJpg/10049/2274504000_fen_amp_frt_1_nr.jpg"
+              alt="amplifier Tone Master® '59 Bassman®"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/guitar-amplifiers/contemporary-digital/tone-master-59-bassman/2274506000.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Tone Master® '59 Bassman®</a
+            >
+          </h3>
+          <p class="price">€1429.00</p>
+        </article>
+        <article>
+          <p class="new">NEW</p>
+          <a
+            href="https://www.fender.com/en-GB/electric-basses/meteora-bass/american-ultra-ii-meteora-bass/0199131790.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10059/0199131790_fen_ins_frt_1_rr.jpg"
+              alt="Bass American Ultra II Meteora® Bass"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/electric-basses/meteora-bass/american-ultra-ii-meteora-bass/0199131790.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >American Ul II Meteora® Bass</a
+            >
+          </h3>
+          <p class="price">€2339.00</p>
+        </article>
+        <article>
+          <p class="new">NEW</p>
+          <a
+            href="https://www.fender.com/en-GB/electric-guitars/telecaster/buck-owens-telecaster/0140452371.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10039/0140452371_fen_ins_frt_1_rr.jpg"
+              alt="Buck Owens Telecaster®"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/electric-guitars/telecaster/buck-owens-telecaster/0140452371.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Buck Owens Telecaster®</a
+            >
+          </h3>
+          <p class="price">€1899.00</p>
+        </article>
+        <article>
+          <p class="new">NEW</p>
+          <a
+            href="https://www.fender.com/en-GB/electric-guitars/stratocaster/player-ii-stratocaster-hss/0140540501.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10043/0140540501_fen_ins_frt_1_rr.jpg"
+              alt="Player II Stratocaster® HSS"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/electric-guitars/stratocaster/player-ii-stratocaster-hss/0140540501.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Player II Stratocaster® HSS</a
+            >
+          </h3>
+          <p class="price">€829.00</p>
+        </article>
+        <article>
+          <p class="new">NEW</p>
+          <a
+            href="https://www.fender.com/en-GB/guitar-amplifiers/vintage-pro-tube/jack-white-pano-verb/8151906000.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=712/https://www.fmicassets.com/Damroot/ZoomJpg/10049/8151904000_fen_amp_frt_1_nr.jpg"
+              alt="amplifier Jack White Pano Verb™"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/guitar-amplifiers/vintage-pro-tube/jack-white-pano-verb/8151906000.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Jack White Pano Verb™</a
+            >
+          </h3>
+          <p class="price">€2869.00</p>
+        </article>
+        <article>
+          <p class="new">NEW</p>
+          <a
+            href="https://www.fender.com/en-GB/squier-electric-guitars/jaguar/affinity-series-jaguar/0378402594.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10040/0378402594_sqr_ins_frt_1_rr.jpg"
+              alt="Affinity Series™ Jaguar®"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/squier-electric-guitars/jaguar/affinity-series-jaguar/0378402594.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Affinity Series™ Jaguar®</a
+            >
+          </h3>
+          <p class="price">€829.00</p>
+        </article>
+      </section>
+      <a
+        href="https://www.fender.com/en-GB/new-releases/"
+        class="out-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        >SHOP ALL</a
+      >
+      <section class="top-model">
+        <h2>TOP MODELS</h2>
+        <ul>
+          <li>
+            <a
+              href="https://www.fender.com/en-GB/electric-guitars/stratocaster/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="https://stuff.fendergarage.com/images/b/f/L/Strat_Tile_HPS_v2@2x.jpg"
+                alt="Stratocaster guitar"
+              />
+              <p>Stratocaster <span class="arrow">⫸</span></p></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.fender.com/en-GB/electric-guitars/telecaster/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="https://stuff.fendergarage.com/images/G/I/f/Tele_Tile_HPS_v2@2x.jpg"
+                alt="Telecaster guitar"
+              />
+              <p>Telecaster <span class="arrow">⫸</span></p></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.fender.com/en-GB/electric-guitars/jaguar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="https://stuff.fendergarage.com/images/3/T/R/Jaguar_Tile_HPS_v2@2x.jpg"
+                alt="Jaguar guitar"
+              />
+              <p>Jaguar <span class="arrow">⫸</span></p></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.fender.com/en-GB/electric-guitars/jazzmaster/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="https://stuff.fendergarage.com/images/e/f/G/Jazzmaster_Tile_HPS_v2@2x.jpg"
+                alt="Jazzmaster guitar"
+              />
+              <p>Jazzmaster <span class="arrow">⫸</span></p></a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              href="https://www.fender.com/en-GB/american-ultra-ii/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >American Ultra II Series</a
+            >
+            <a
+              href="https://www.fender.com/en-GB/american-ultra-ii/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >SHOP NOW</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.fender.com/en-GB/new-releases/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >New Releases</a
+            >
+            <a
+              href="https://www.fender.com/en-GB/new-releases/"
+              class="outer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >SHOP NOW</a
+            >
+          </li>
+        </ul>
+      </section>
+      <nav class="nav-accesories">
+        <h2>ACCESORIES, PARTS AND MERCH</h2>
+        <ul>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer"
+              >BEST SELLERS</a
+            >
+          </li>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer"
+              >NEW IN ACCESORIES & MERCH</a
+            >
+          </li>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer"
+              >NEW IN PARTS</a
+            >
+          </li>
+          <li>
+            <a href="#null" target="_blank" rel="noopener noreferrer"
+              >70TH ANNIVERSARY COLLECTION</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <section class="second-gallery">
+        <article>
+          <p>BEST SELLER</p>
+          <a
+            href="https://www.fender.com/en-GB/guitar-amplifiers/contemporary-digital/mustang-micro-plus/2311600000.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=712/https://www.fmicassets.com/Damroot/ZoomJpg/10048/2311600000_fen_acc_frt_1_nr.jpg"
+              alt="Mustang® Micro Plus"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/guitar-amplifiers/contemporary-digital/mustang-micro-plus/2311600000.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Mustang® Micro Plus</a
+            >
+          </h3>
+          <p class="price">€129.00</p>
+        </article>
+        <article>
+          <p>BEST SELLER</p>
+          <a
+            href="https://www.fender.com/en-GB/accessories/cases/mustang-micromicro-plus-case/0991012000.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=712/https://www.fmicassets.com/Damroot/ZoomJpg/10002/0991012000_fen_acc_frt_1_nr.jpg"
+              alt="Mustang™ Micro/Micro Plus Case"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/accessories/cases/mustang-micromicro-plus-case/0991012000.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Mustang™ Micro/Micro Plus Case</a
+            >
+          </h3>
+          <p class="price">€28.99</p>
+        </article>
+        <article>
+          <p>BEST SELLER</p>
+          <a
+            href="https://www.fender.com/en-GB/accessoriesstands/adjustable-guitar-stand/0991802000.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=712/https://www.fmicassets.com/Damroot/ZoomJpg/10001/0991802000_fen_acc_frt_1_nr.jpg"
+              alt="Adjustable Guitar Stand"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/accessoriesstands/adjustable-guitar-stand/0991802000.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Adjustable Guitar Stand</a
+            >
+          </h3>
+          <p class="price">€18.99</p>
+        </article>
+        <article>
+          <p>BEST SELLER</p>
+          <a
+            href="https://www.fender.com/en-GB/accessoriescables/accessory-essentials-pack---cable-clip-on-tuner-strap/0992018005.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=712/https://www.fmicassets.com/Damroot/ZoomJpg/10043/0992018005_fen_acc_frt_1_nr.jpg"
+              alt="Accessory Essentials Pack - Cable, Clip-On Tuner, Strap"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/accessoriescables/accessory-essentials-pack---cable-clip-on-tuner-strap/0992018005.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Accessory Essentials Pack</a
+            >
+          </h3>
+          <p class="price">€25.99</p>
+        </article>
+        <article>
+          <p>BEST SELLER</p>
+          <a
+            href="https://www.fender.com/en-GB/accessoriespicks/celluloid-medley-picks-351-shape---12-pack/0980300100.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=712/https://www.fmicassets.com/Damroot/ZoomJpg/10001/0980300100_merch_frt_001_nr.jpg"
+              alt="Celluloid Medley Picks, 351 Shape - 12 Pack"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/accessoriespicks/celluloid-medley-picks-351-shape---12-pack/0980300100.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Celluloid Medley Picks - 12 Pack</a
+            >
+          </h3>
+          <p class="price">€5.99</p>
+        </article>
+        <article>
+          <p>BEST SELLER</p>
+          <a
+            href="https://www.fender.com/en-GB/shoegaze-collection/deluxe-series-tweed-instrument-cables/0990820086.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=712/https://www.fmicassets.com/Damroot/ZoomJpg/10001/0990820086_merch_frt_002_nr.jpg"
+              alt="Deluxe Series Tweed Instrument Cables"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/shoegaze-collection/deluxe-series-tweed-instrument-cables/0990820086.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Deluxe Series Tweed Instrument Cables</a
+            >
+          </h3>
+          <p class="price">€20.99</p>
+        </article>
+        <article>
+          <p>BEST SELLER</p>
+          <a
+            href="https://www.fender.com/en-GB/accessoriesstrings/super-250s-nickel-plated-steel-guitar-strings/0730250403.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=712/https://www.fmicassets.com/Damroot/ZoomJpg/10002/0730250403_merch_frt_001_nr.jpg"
+              alt="Super 250's Nickel-Plated Steel Guitar Strings"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/accessoriesstrings/super-250s-nickel-plated-steel-guitar-strings/0730250403.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Super 250's Nickel-Plated strings</a
+            >
+          </h3>
+          <p class="price">€7.49</p>
+        </article>
+        <article>
+          <p>BEST SELLER</p>
+          <a
+            href="https://www.fender.com/en-GB/accessories/digital-tuners/ft-1-pro-clip-on-tuner/0239978000.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://www.fender.com/cdn-cgi/image/format=png,resize=height=auto,width=712/https://www.fmicassets.com/Damroot/ZoomJpg/10002/0239978000_merch_dtl_001_nr.jpg"
+              alt="FT-1 Pro Clip-On Tuner"
+          /></a>
+          <h3>
+            <a
+              href="https://www.fender.com/en-GB/accessories/digital-tuners/ft-1-pro-clip-on-tuner/0239978000.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >FT-1 Pro Clip-On Tuner</a
+            >
+          </h3>
+          <p class="price">€13.49</p>
+        </article>
+      </section>
+      <a
+        href="https://www.fender.com/en-GB/new-releases/"
+        class="out-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        >SHOP ALL</a
+      >
+      <section class="mod-shop">
+        <ul>
+          <li>
+            <a
+              href="https://www.fender.com/en-GB/mod-shop.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Mod Shop - NEW OPTIONS</a
+            >
+            <a
+              href="https://www.fender.com/en-GB/mod-shop.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >SHOP NOW</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.fender.com/en-GB/christmas-gift-guide.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LEARN MORE</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="top-cat">
+        <h2>TOP CATEGORIES</h2>
+        <ul>
+          <li>
+            <a
+              href="https://www.fender.com/en-GB/electric-guitars/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="https://stuff.fendergarage.com/images/r/b/e/electrics-category-tile-v3@2x.jpg"
+                alt="electric guitars"
+              />
+              <p>Electrics</p></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.fender.com/en-GB/acoustic-guitars/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="https://stuff.fendergarage.com/images/N/0/8/acoustics-category-tile-v2@2x.jpg"
+                alt="acoustic guitars"
+              />
+              <p>Acoustics</p></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.fender.com/en-GB/squier-electric-guitars/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="https://stuff.fendergarage.com/images/Q/4/A/squier-category-tile-v2@2x.jpg"
+                alt="squier guitars"
+              />
+              <p>Squier</p></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.fender.com/en-GB/guitar-amplifiers/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="https://stuff.fendergarage.com/images/a/f/t/amps-category-tile-v2@2x.jpg"
+                alt="amps & audio"
+              />
+              <p>Amps & Audio</p></a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="article-sect">
+        <h3>TRENDING ARTICLES</h3>
+        <div class="flex-article">
+          <article>
+            <img
+              src="https://stuff.fendergarage.com/images/x/f/Y/Web_Fender_10_04_24_Player_II_All_Day_All_Night_Article_FeedCard_960x1338@2x.jpg"
+              alt="four artists reinterpret a 60s classic"
+            />
+            <p>FENDER PERFORMANCES</p>
+            <h4>
+              Four artists reinterpret a 60s classic dor the Player II Series
+            </h4>
+            <a
+              href="https://www.fender.com/articles/fender-performances/player-ii-series-all-day-all-night"
+              target="_blank"
+              rel="noopener noreferrer"
+              >READ NOW
+            </a>
+          </article>
+          <article>
+            <img
+              src="https://stuff.fendergarage.com/images/B/6/z/Web_Fender_10_24_24_Exploring_the_Jack_White_Collection_The_Triplecaster_Telecaster_Article_FeedCards_960x1338@2x.jpg"
+              alt="jack white guitar"
+            />
+            <p>INSTRUMENTS</p>
+            <h4>
+              Exploring the Jack White collection: The triplecaster Telecaster
+            </h4>
+            <a
+              href="https://www.fender.com/articles/instruments/jack-white-collection-triplecaster-telecaster"
+              target="_blank"
+              rel="noopener noreferrer"
+              >READ NOW</a
+            >
+          </article>
+          <article>
+            <img
+              src="https://stuff.fendergarage.com/images/7/S/3/Web_Fender_10_29_24_American_Ultra_II_Telecaster_Pure_Play_Article_FeedCards_960x1338@2x.jpg"
+              alt="John 5 plays american ultra II"
+            />
+            <p>FENDER PERFORMANCES</p>
+            <h4>
+              John 5 plays the American Ultra II Telecaster in live concert
+            </h4>
+            <a
+              href="https://www.fender.com/articles/instruments/american-ultra-ii-telecaster-john-5"
+              target="_blank"
+              rel="noopener noreferrer"
+              >READ NOW</a
+            >
+          </article>
+        </div>
+      </section>
+      <section>
+        <ul class="quality-icons">
+          <li>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2438/2438078.png"
+              alt="quality"
+            />
+            <h4>QUALITY ASSURED</h4>
+            <p>Fender-certified quality assurance</p>
+          </li>
+          <li>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/709/709790.png"
+              alt="shipping"
+            />
+            <h4>FREE SHIPPING</h4>
+            <p>
+              Free Standard shipping on all orders over €50 and Free Express
+              shipping over €599
+            </p>
+          </li>
+          <li>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/4989/4989753.png"
+              alt="returns"
+            />
+            <h4>EASY RETURNS</h4>
+            <p>Return or exchange within 30 days of receipt</p>
+          </li>
+          <li>
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/3758/3758028.png"
+              alt="support"
+            />
+            <h4>FENDER SUPPORT</h4>
+            <p>Get support & advice from our expert gear advisors</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <form action="newsletter.js" method="post">
+        <img
+          src="https://www.mannys.com.au/Images/CategoryImages/brand-info/logos/fenderlogo.png"
+          alt="white fender logo"
+        />
+        <h3>Don't miss out!</h3>
+        <p>
+          Be the first to know about new products, featured content, exclusive
+          offers and giveaways.
+        </p>
+        <input
+          type="email"
+          name="newsletter"
+          id="newsletter"
+          placeholder="ENTER EMAIL ADDRESS"
+        />
+        <button type="submit">SIGN UP</button>
+      </form>
+      <section>
+        <nav>
+          <h4>Products</h4>
+          <ul>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/electric-guitars/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Electric Guitars</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/electric-guitars/stratocaster/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Stratocaster</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/electric-guitars/telecaster/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Telecaster</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/guitar-amplifiers/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Guitar Amplifiers</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/electric-basses/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Basses</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/acoustic-guitars/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Acoustic Guitars</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/mod-shop.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Mod Shop</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.fendercustomshop.com/?_gl=1*2zf6vm*_gcl_aw*R0NMLjE3MzA4NDM4ODguQ2p3S0NBanctSkc1QmhCWkVpd0F0N0pSNjc1b3pPSEozcEdZTG1vcV92d3ppQUl0d3VBd1pGVmZpbTF6SUkxZGlYYklmWVU0ZFYyVzZSb0NVb3dRQXZEX0J3RQ..*_gcl_au*MjEzMDMwMjU0LjE3MjkyNTkzMjA.*_ga*MjIzODQ5Mzk0LjE3MjkyNTkzMTg.*_ga_LM1PVBW4K2*MTczMDk5ODE3My4yNi4xLjE3MzEwMDEwNzguNjAuMC4w"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Fender Custom Shop</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <h4>Company</h4>
+          <ul>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/fender-about.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/fender-about.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/careers"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://spotlight.fender.com/newsroom?_gl=1*2zf6vm*_gcl_aw*R0NMLjE3MzA4NDM4ODguQ2p3S0NBanctSkc1QmhCWkVpd0F0N0pSNjc1b3pPSEozcEdZTG1vcV92d3ppQUl0d3VBd1pGVmZpbTF6SUkxZGlYYklmWVU0ZFYyVzZSb0NVb3dRQXZEX0J3RQ..*_gcl_au*MjEzMDMwMjU0LjE3MjkyNTkzMjA.*_ga*MjIzODQ5Mzk0LjE3MjkyNTkzMTg.*_ga_LM1PVBW4K2*MTczMDk5ODE3My4yNi4xLjE3MzEwMDEwNzguNjAuMC4w"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Newsroom</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <h4>More from Fender</h4>
+          <ul>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/why-buy-fender.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Find your Fender</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/findyourfender.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Why Buy Fender?</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/online-guitar-tuner/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Online Guitar Tuner</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/apps/tune-app-guitar-tuner/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Tuner App</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/totum-discount.html/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >TOTUM Student Discount</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/student-beans.html/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Student Beans Discount</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <h4>Customer service</h4>
+          <ul>
+            <li>
+              <a
+                href="https://support.fender.com/?_gl=1*s00oqe*_gcl_aw*R0NMLjE3MzA4NDM4ODguQ2p3S0NBanctSkc1QmhCWkVpd0F0N0pSNjc1b3pPSEozcEdZTG1vcV92d3ppQUl0d3VBd1pGVmZpbTF6SUkxZGlYYklmWVU0ZFYyVzZSb0NVb3dRQXZEX0J3RQ..*_gcl_au*MjEzMDMwMjU0LjE3MjkyNTkzMjA.*_ga*MjIzODQ5Mzk0LjE3MjkyNTkzMTg.*_ga_LM1PVBW4K2*MTczMDk5ODE3My4yNi4xLjE3MzEwMDEwNzguNjAuMC4w"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Support</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://serialnumberlookup.fender.com/lookup/?_gl=1*s00oqe*_gcl_aw*R0NMLjE3MzA4NDM4ODguQ2p3S0NBanctSkc1QmhCWkVpd0F0N0pSNjc1b3pPSEozcEdZTG1vcV92d3ppQUl0d3VBd1pGVmZpbTF6SUkxZGlYYklmWVU0ZFYyVzZSb0NVb3dRQXZEX0J3RQ..*_gcl_au*MjEzMDMwMjU0LjE3MjkyNTkzMjA.*_ga*MjIzODQ5Mzk0LjE3MjkyNTkzMTg.*_ga_LM1PVBW4K2*MTczMDk5ODE3My4yNi4xLjE3MzEwMDEwNzguNjAuMC4w"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Serial Number Lookup</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/dealers"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Find a Dealer</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/store-policy.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Store Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/store-policy.html#shipping"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Shipping Info</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://support.fender.com/en-US/knowledgebase/category/?id=CAT-01014&_gl=1*wdj6rc*_gcl_aw*R0NMLjE3MzA4NDM4ODguQ2p3S0NBanctSkc1QmhCWkVpd0F0N0pSNjc1b3pPSEozcEdZTG1vcV92d3ppQUl0d3VBd1pGVmZpbTF6SUkxZGlYYklmWVU0ZFYyVzZSb0NVb3dRQXZEX0J3RQ..*_gcl_au*MjEzMDMwMjU0LjE3MjkyNTkzMjA.*_ga*MjIzODQ5Mzk0LjE3MjkyNTkzMTg.*_ga_LM1PVBW4K2*MTczMDk5ODE3My4yNi4xLjE3MzEwMDEwNzguNjAuMC4w"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Warranty</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://support.fender.com/en-US/knowledgebase/category/?id=CAT-01005&_gl=1*wdj6rc*_gcl_aw*R0NMLjE3MzA4NDM4ODguQ2p3S0NBanctSkc1QmhCWkVpd0F0N0pSNjc1b3pPSEozcEdZTG1vcV92d3ppQUl0d3VBd1pGVmZpbTF6SUkxZGlYYklmWVU0ZFYyVzZSb0NVb3dRQXZEX0J3RQ..*_gcl_au*MjEzMDMwMjU0LjE3MjkyNTkzMjA.*_ga*MjIzODQ5Mzk0LjE3MjkyNTkzMTg.*_ga_LM1PVBW4K2*MTczMDk5ODE3My4yNi4xLjE3MzEwMDEwNzguNjAuMC4w"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Manuals</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://start.fender.com/?_gl=1*wdj6rc*_gcl_aw*R0NMLjE3MzA4NDM4ODguQ2p3S0NBanctSkc1QmhCWkVpd0F0N0pSNjc1b3pPSEozcEdZTG1vcV92d3ppQUl0d3VBd1pGVmZpbTF6SUkxZGlYYklmWVU0ZFYyVzZSb0NVb3dRQXZEX0J3RQ..*_gcl_au*MjEzMDMwMjU0LjE3MjkyNTkzMjA.*_ga*MjIzODQ5Mzk0LjE3MjkyNTkzMTg.*_ga_LM1PVBW4K2*MTczMDk5ODE3My4yNi4xLjE3MzEwMDEwNzguNjAuMC4w"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Register Your Fender</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <h4>Account</h4>
+          <ul>
+            <li>
+              <a
+                href="https://www.fender.com/profile/info"
+                target="_blank"
+                rel="noopener noreferrer"
+                >My Account</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/order-history"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Order Status</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.fender.com/en-GB/store-policy.html#returns"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Return & Exchanges</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <nav class="lang-social">
+        <ul>
+          <li>
+            <a
+              href="https://www.fender.com/en-GB/redirect?c=ES&l=es"
+              target="_blank"
+              rel="noopener noreferrer"
+              >SPAIN</a
+            >
+          </li>
+          <li>
+            <img
+              src="https://img.icons8.com/?size=48&id=18099&format=png"
+              alt="spain flag"
+            />
+          </li>
+        </ul>
+        <div>
+          <a
+            href="http://www.facebook.com/FenderEurope/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://img.icons8.com/?size=80&id=118568&format=png"
+              alt="facebook icon"
+          /></a>
+          <a
+            href="http://www.twitter.com/Fender/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://img.icons8.com/?size=60&id=vy2qw82xOgLB&format=png"
+              alt="x icon"
+          /></a>
+          <a
+            href="https://instagram.com/fender"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://img.icons8.com/?size=80&id=YtpeVQhQ8USm&format=png"
+              alt="instagram icon"
+          /></a>
+          <a
+            href="https://www.youtube.com/user/fendermusical"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="https://img.icons8.com/?size=80&id=rhqG5aD2_6pw&format=png"
+              alt="youtube icon"
+          /></a>
+        </div>
+      </nav>
+      <ul class="terms-legal">
+        <li>
+          <a
+            href="https://www.fender.com/en-GB/privacy-portal.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Privacy Portal</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.fender.com/en-GB/term-of-use"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Terms of Use</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.fender.com/en-GB/supply-chain-transparency"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Supply Chain Transparency</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.fender.com/en-GB/anti-slavery-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Modern Slacery Act</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.fender.com/en-GB/accessibility-statement"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Accessibility Statement</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.fender.com/en-GB/competition-law"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Competition Law</a
+          >
+        </li>
+      </ul>
+      <p id="end">
+        Copyright ©2024. Fender Musical Instruments Corporation. All Rights
+        Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
