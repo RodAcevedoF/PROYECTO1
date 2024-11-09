@@ -727,10 +727,11 @@ footer > form img {
 }
 footer input {
     background-color: var(--letter-color); 
-    border: 2px solid var(--letter-tertiary);
+    border: 2px solid var(--background-color);
     font-size: 15px;
     font-weight: bold;
     padding: 20px;
+    color: var(--letter-secondary);
 }
 footer button {
     align-self: flex-end;
@@ -914,6 +915,10 @@ footer section:nth-child(2) h4 {
         font-size: 13px;
         padding: 5px;
     }
+    .terms-legal {
+        flex-flow: row wrap;
+        padding-left: 5px
+    }
     .terms-legal li a, #end {
         font-size: 11px;
     }
@@ -984,6 +989,7 @@ footer section:nth-child(2) h4 {
     }
     .terms-legal {
         flex-flow: row wrap;
+        gap: 5px;
     }
     .terms-legal li a{
         font-size: 12px;
